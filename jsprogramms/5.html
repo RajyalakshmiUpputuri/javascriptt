@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>code</title>
+</head>
+<body>
+Username:<input type="text" id="check">
+<span id="Message"></span>
+</br>
+<input type="button" onclick="add()" value="Submit">
+</body><script type="text/javascript">
+function add(){
+	var b=/^[A-Za-z]+$/;
+	var a=document.getElementById("check").value;
+	if(a==""){
+		document.getElementById("Message").innerHTML="plz enter name";
+		return false;
+	}
+	if(a.length<3){
+		document.getElementById("Message").innerHTML="plz enter more then 3";
+		return false;
+	}
+	if (a.length<20) {
+		document.getElementById("Message").innerHTML="plz enter gt then 20 char";
+		return false;
+	}
+	if(a.match(b))
+		document.getElementById("Message").innerHTML="true";
+
+	else{
+		document.getElementById("Message").innerHTML="onlyalpha";
+		return false;
+	}
+	
+}
+
+</script>
+</html>

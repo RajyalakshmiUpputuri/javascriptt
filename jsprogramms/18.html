@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>18program</title>
+	<style type="text/css">
+		input[type="text"]{
+			box-sizing: 49px;
+
+		}
+		
+	</style>
+</head>
+<body>
+number:<input type="text" name="1" id="num1">
+<button onClick="divOfTwo()">clickme</button>
+answ:<input type="text" name="2" id="answ" style="background-size:5px">
+</body>
+<script type="text/javascript">
+	
+function divOfTwo(){
+
+var a;
+a=Number(document.getElementById("num1").value);
+if(a%2==0)
+	{
+		document.getElementById("answ").value=a%2;
+
+	}
+	else{
+		document.getElementById("answ").value="sorry u enter not divisibles of two";
+	}
+}
+
+</script>
+</html>

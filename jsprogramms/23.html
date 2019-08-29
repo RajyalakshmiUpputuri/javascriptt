@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>23program</title>
+	<style type="text/css">
+		input[type=text]{
+			background-color:gray;
+			color:red;
+			font-style: bold;
+		}
+	</style>
+</head>
+<body>
+EnterValueNumber:<input type="text" id="num1">
+<button onClick="add()" style="background-color:yellow;color: gray;font-style:bold">ClickMeToknowAnsw</button>
+<span id="answ"></span>
+</body>
+<script type="text/javascript">
+	function add(){
+		var n,x,sum;
+		n=Number(document.getElementById("num1").value);
+        x=n;
+		do{
+			sum+= x + "<BR>";
+          x--;
+         }while(x!=0);
+		document.getElementById("answ").innerHTML=sum;
+	}
+</script>
+</html>

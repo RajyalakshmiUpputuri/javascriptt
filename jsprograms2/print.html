@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Print</title>
+</head>
+<body>
+<button onclick="add()">Print</button>
+</body>
+<script type="text/javascript">
+	function add(){
+	var a=document.createElement("P");
+	a.textContent="This page will going to print automatically";
+	document.body.appendChild(a).innerHTML;
+	window.print();
+	
+}
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>56program</title>
+</head>
+<body><form onsubmit="return check();">
+email:<input type="email" name=""id="email">
+<input type="submit">
+</form>
+</body>
+<script type="text/javascript">
+	
+	function check()
+	{
+		var email = document.getElementById("email");
+		if(email.value=="")
+		{
+			alert("please input email address");
+			return false;
+		}
+		else if(!email.checkValidity())
+			alert("Please input right email address");
+		else
+			alert("The email address you input is right");
+	}
+	
+</script>
+</html>

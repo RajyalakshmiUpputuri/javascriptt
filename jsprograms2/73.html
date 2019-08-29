@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrays</title>
+</head>
+<body>
+<button onclick="fun()">ClickMeToseeArrays</button>
+</body>
+<script type="text/javascript">
+	
+	function fun(){
+		var arr=["rami","arai","raji","nani","puji","radha","ramma"];//setting and definig
+		arr[0]=12;//adding new value
+		
+		for(var i=0;i<arr.length;i++){
+	document.write("values are"+"\n"+arr[i]+"</br>");//getting the val
+
+
+}
+
+document.write("My last array value is"+"\n"+arr.pop()+"</br>");//getting last value
+document.write("My first array value is"+"\n"+arr.shift()+"</br>"+"unshift the values are"+arr.unshift("DAD"));//getting first value
+document.write("The length of the array is"+arr.length+"</br>");//length
+document.write("The value is removedof the array is"+delete arr[3]+"</br>"+"after removing value but not my length changed bcz i used 'delete'"+"</br"+arr.slice(0,1)+"</br>"+"After removing my size is"+arr.length+"</br>"+" pushing  value in arra is"+arr.push("ramesh")+"</br>");
+
+var am=["jhon","ram","shaine"];
+for(var i in am){
+	alert(am[i]);
+}
+
+//
+document.write("The concatenation of two array are"+arr.concat(am)+"</br>"+"replacing the  values of radha is raji2"+arr.slice(3,3,"raji2")+"\n  "+"</br>"+"after sorting my values are"+"\n"+arr.sort());
+
+
+
+for(var j=0;j<arr.length;j++){
+	document.write(arr[j]+"\n    ");
+}
+}
+
+</script>
+<script type="text/javascript" >
+	var a=[56,89,80,76];
+	while(a.length){
+	a.pop();
+}
+document.write("my array was empty"+a);
+
+</script>
+</html>

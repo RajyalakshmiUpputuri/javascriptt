@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>6</title>
+</head>
+<body>
+Mobile
+:<input type="text" name="2" id="no">
+<span id="Message"></span>
+</br>
+<input type="button" onclick="add()" value="submit">
+</body>
+<script type="text/javascript">
+	
+function add() {
+	var b=/^[0-9]+$/;
+	var c=/^[A-Za-z]+$/;
+	var a=document.getElementById("no").value;
+	if(a==""){
+		document.getElementById("Message").innerHTML="itis empty enter number";
+		return false;
+	}
+	if(a.length<10){
+		document.getElementById("Message").innerHTML="not less then 10";
+		return false;
+	}
+	if(a.length>10){
+		document.getElementById("Message").innerHTML="must 10";
+		return false;
+	}
+	if(a.charAt(0)=="9"||a.charAt(0)=="8"||a.charAt(0)=="7"||a.charAt(0)=="6")  {
+		document.getElementById("Message").innerHTML="success";
+	}
+	
+	else{
+		document.getElementById("Message").innerHTML="must contain alph";
+	}if(a.length==/^[A-Za-z]+$/){
+		document.getElementById("Message").innerHTML="not har";
+		return false;
+	}
+	
+}
+</script>
+</html>

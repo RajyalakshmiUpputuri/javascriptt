@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>33program</title>
+</head><body>
+
+<input type="text" id="enter">
+<input type="text" id="enter2">
+<button onclick="add()">Click</button>
+
+
+<div id="demo"></div>
+
+<script>
+
+ function add(){
+
+var a=document.getElementById("enter").value; 
+var b=document.getElementById("enter2").value;
+if(a==b){
+
+var c=(parseInt(a) + parseInt(b)) * 3;
+
+document.getElementById("demo").innerHTML = c;
+
+} 
+else {
+
+var d=parseInt(a)+parseInt(b);
+
+document.getElementById("demo").innerHTML=d;
+
+} 
+}
+
+</script>
+
+</body>
+</html>

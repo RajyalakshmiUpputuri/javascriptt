@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head id="This is the head id">
+	<title>69program</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var x=document.createElement("INPUT");
+	x.setAttribute("type","button");
+	x.setAttribute("onclick","btn()");
+	x.setAttribute("value","clickmetoseemagic");
+	document.body.appendChild(x);
+	x.style.color='aqua';
+	x.style.backgroundColor='gray';
+
+
+	var i=document.createElement("P");
+	i.setAttribute("id","dem");
+	document.body.appendChild(i);
+	i.style.color='aqua';
+	i.style.backgroundColor='gray';
+
+
+	function btn(){
+	var a=document.head;
+	document.getElementById("dem").innerHTML=a.id;
+}
+</script>
+</html>

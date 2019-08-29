@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>check</title>
+</head>
+<body>
+<form onsubmit="return fun()" name="myform">
+	<input type="checkbox" name="a1">Value1</br>
+	<input type="checkbox" name="a1">Value2</br>
+	<input type="checkbox" name="a1">Valu3</br>
+	<span id="demo"></span></br>
+	<input type="submit" value="Submit">
+</form>
+</body><script type="text/javascript">
+	function fun(){
+	var a=document.myform.a1;
+	for(var i=0;i<a.length;i++){
+		if(a[i].checked==true)
+		return false;
+		document.getElementById("demo").innerHTML=" the box";
+	}
+	document.getElementById("demo").innerHTML="plz select anyone of the box";
+	return false;
+}
+var x=[typeof x ,typeof y][1];
+document.write(typeof(typeof x));
+</script>
+</html>

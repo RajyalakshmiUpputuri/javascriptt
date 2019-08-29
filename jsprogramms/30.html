@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>22program</title>
+</head>
+<body>
+EnterNum:<input type="text" id="num1">
+<button onclick="add()">CliCkMeToKnowAnsw</button>
+<span id="demo"></span>
+
+</body>
+<script type="text/javascript">
+
+function add() {
+var n,display_for;
+n=Number(document.getElementById("num1").value);
+
+for (x=n;x>=0;x--){
+display_for += x + "<BR>";
+}
+ 
+document.getElementById("demo").innerHTML=display_for;
+}
+</script>
+</html>

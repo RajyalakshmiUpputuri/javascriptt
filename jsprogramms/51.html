@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>51program</title>
+</head>
+<body>
+EnterYearToKnowLeapYearOrNot:<input type="text" id="num1">
+<button onclick="leap_year()">ClickMeToKnowYourAnswer</button>
+<span id="demo"></span>
+</body>
+<script type="text/javascript">
+	function leap_year(){
+		var n;
+		n=document.getElementById("num1").value;
+		if(n%4==0){
+			if(n%100==0){
+				if(n%400==0)
+					document.getElementById("demo").innerHTML="it is a leap year"+n;
+				
+				else
+				
+					document.getElementById("demo").innerHTML="notleapyear"+n;
+				
+
+				}
+				else
+					document.getElementById("demo").innerHTML="it is a leap year"+n;
+				}
+				else
+					document.getElementById("demo").innerHTML="notleapyear"+n;
+			}
+		
+	
+</script>
+</html>

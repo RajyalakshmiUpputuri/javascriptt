@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>59program</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var x=document.createElement("FORM");
+	x.setAttribute("id","myform");
+	document.body.appendChild(x);
+
+	var y=document.createElement("INPUT");
+	y.setAttribute("type","text");
+	y.setAttribute("id","num1");
+	document.getElementById("myform").appendChild(y);
+
+var z=document.createElement("INPUT");
+	z.setAttribute("type","text");
+	z.setAttribute("id","num2");
+	document.getElementById("myform").appendChild(z);
+
+	var b=document.createElement("INPUT");
+	b.setAttribute("type","button");
+	b.setAttribute("value","Multiply");
+	b.setAttribute("onclick","mul()");
+	document.getElementById("myform").appendChild(b);
+
+
+	var d=document.createElement("INPUT");
+	d.setAttribute("type","button");
+	d.setAttribute("value","Divided");
+	d.setAttribute("onclick","div()");
+	document.getElementById("myform").appendChild(d);
+
+var i=document.createElement("P");
+	i.setAttribute("id","dem");
+	document.body.appendChild(i);
+
+
+	function mul(){
+		var a,b;
+		a=Number(document.getElementById("num1").value);
+		b=Number(document.getElementById("num2").value);
+		c=a*b;
+		document.getElementById("dem").innerHTML=c;
+	}
+	function div(){
+		var a,b;
+		a=Number(document.getElementById("num1").value);
+		b=Number(document.getElementById("num2").value);
+		c=a/b;
+		document.getElementById("dem").innerHTML=c;
+	}
+</script>
+</html>

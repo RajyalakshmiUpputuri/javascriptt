@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>12program</title>
+</head>
+<body>
+number1:<input type="text" name="1" id="num1"style="color:red">
+number2:<input type="text" name="2" id="num2" style="color: blue">
+answer:<input type="text" name="3" id="answ" style="color:hotpink">
+
+</br>
+<button onClick="plus()" style="color:red;background-color: gray">plus</button>
+
+<button onClick="minus()" style="color:blue ;background-color:gray">minus</button>
+<button onClick="mul()" style="color:pink;background-color: gray">multiple</button>
+<button onClick="div()"style="color:yellow;background-color: gray">divided</button>
+<button onClick="pow()" style="color: orange;background-color: gray">Power</button>
+</body>
+<script type="text/javascript">
+	function plus(){
+		var a,b,c;
+		a=Number(document.getElementById("num1").value);
+		b=Number(document.getElementById("num2").value);
+		c=a+b;
+		document.getElementById("answ").value=c;
+	}
+function minus() {
+a=Number(document.getElementById("num1").value);
+		b=Number(document.getElementById("num2").value);
+		c=a-b;
+		document.getElementById("answ").value=c;
+
+}
+function mul() {
+a=Number(document.getElementById("num1").value);
+		b=Number(document.getElementById("num2").value);
+		c=a*b;
+		document.getElementById("answ").value=c;
+
+}
+function div() {
+a=Number(document.getElementById("num1").value);
+		b=Number(document.getElementById("num2").value);
+		c=a/b;
+		document.getElementById("answ").value=c;
+
+}
+function pow(){
+	a=Number(document.getElementById("num1").value);
+		b=Number(document.getElementById("num2").value);
+		c=a**b;
+		document.getElementById("answ").value=c;
+}
+	
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>36program</title>
+</head>
+<body>
+<input type="text" id="name"> 
+<button onclick="add()">submit</button>
+<span id="demo"></span>
+</body>
+<script type="text/javascript">
+	function add(){
+		var a;
+		a=Number(document.getElementById("name").value);
+		if(a>0 && a%3==0){
+			document.getElementById("demo").innerHTML=a;
+		}
+		else if(a>0 && a%7==0){
+			document.getElementById("demo").innerHTML=a;
+		}
+		else if(a!>0){
+			document.getElementById("demo").innerHTML="plz enter the +ve values only";
+		}
+		else{
+			document.getElementById("demo").innerHTML="enter number which are divisible 3 or 7 only";
+		}
+	}
+
+</script>
+</html>

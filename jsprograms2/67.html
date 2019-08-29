@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>67program</title>
+	<style type="text/css">
+		button{
+			box-sizing:67px;
+			background-color: aqua;
+			color: gray;
+			font-size: 45px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+<button onclick="add()">ClickMeToOpenNewWindow</button>
+</body>
+<script type="text/javascript">
+	function add(){
+	var x=window.open("","x","width=300,height=500");
+	x.document.write("This Is My New Window");
+		x.opener.document.write("This Screen Opens The NewWindow In your Tab");
+	}
+	
+</script>
+</html>

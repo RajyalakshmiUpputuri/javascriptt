@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>34program</title>
+</head>
+<body>
+1stNumber:<input type="text" id="num1"></br>
+2ndNumber:<input type="text" id="num2"></br>
+<button onclick="mul()">Multiply</button>
+<button onclick="div()">Divide</button>
+</br>
+The Result is:<span id="demo"></span>
+</body>
+<script type="text/javascript">
+	function mul(){
+		var a,b;
+		a=Number(document.getElementById("num1").value);
+		b=Number(document.getElementById("num2").value);
+		c=a*b;
+		document.getElementById("demo").innerHTML=c;
+	}
+	function div(){
+		var a,b;
+		a=Number(document.getElementById("num1").value);
+		b=Number(document.getElementById("num2").value);
+		c=a/b;
+		document.getElementById("demo").innerHTML=c;
+	}
+</script>
+</html>

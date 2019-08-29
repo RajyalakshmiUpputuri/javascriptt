@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>50program</title>
+</head>
+<body>
+<h1>Enter your birthday here in the format of(month,day,year)</h1>
+Enter your BirthDay Month:<input type="text" id="bmon">
+Enter your BirthDay Day:<input type="text" id="bmon1">
+Enter your BirthDay Year:<input type="text" id="bmon2">
+<button onclick="age1()">ClickOnMeToKnowYourAge</button>
+<span id="demo"></span>
+</body>
+<script type="text/javascript">
+	
+	function age1()
+{
+var birthday_month;
+var birthday_day;
+var birthday_year;
+birthday_month=document.getElementById("bmon").value;
+birthday_day=document.getElementById("bmon1").value;
+birthday_year=document.getElementById("bmon2").value;
+   var today_date = new Date();
+   var today_year = today_date.getFullYear();
+   var today_month = today_date.getMonth();
+    var today_day = today_date.getDate();
+    age = today_year - birthday_year;
+
+    if ( today_month < (birthday_month - 1))
+    {
+        age--;
+    }
+    if (((birthday_month - 1) == today_month) && (today_day < birthday_day))
+    {
+        age--;
+    }
+     document.getElementById("demo").innerHTML=age;
+
+}
+
+</script>
+</html>

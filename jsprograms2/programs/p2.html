@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>p2</title>
+</head>
+<body>
+	<input type="text" id="name"></br>
+<input type="submit" onsubmit="return add()" value="ClickMeToKnowTheNumberIsOdd(OR)Even"></br>
+<span id="demo"></span>
+</body>
+<script type="text/javascript">
+/*var x=document.createElement("INPUT");
+x.setAttribute("type","text");
+x.setAttribute("id","name");
+document.body.appendChild(x);*/
+
+
+/*var i=document.createElement("INPUT");
+i.setAttribute("type","submit");
+i.setAttribute("onsubmit","return add()");
+i.setAttribute("value","ClickMeToKnowTheNumberIsOdd(OR)Even");
+i.setAttribute("id","demo");
+document.body.appendChild(i);*/
+
+function add(){
+	var a=document.getElementById("name").value;
+	if(a%2==0){
+
+		document.getElementById("demo").innerHTML=a%2+"is even number";
+	}
+	else{
+	document.getElementById("demo").innerHTML="sorry it is odd number";
+	
+
+		
+}
+}
+</script>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>22program</title>
+</head>
+<body>
+<form name="mycheck" onsubmit="return add()">
+
+		 <input type="radio" name="nam">Ramakoteswarigarru<br>
+		 <input type="radio" name="nam">Rajyalakshmi<br>
+		  <input type="radio" name="nam"> Aravind<br>
+<span id="dem"> </span>
+<br>
+<input type="submit" value="Submit"> 
+</form>
+</body>
+<script>
+
+function add() {
+	
+	var a= document.mycheck.nam;
+	for(i=0; i<a.length; i++) {
+		if(a[i].checked == true)
+			return true;
+	}
+	document.getElementById("dem").innerHTML = "select any button";
+	return false;
+
+}
+
+</script>
+</html>
